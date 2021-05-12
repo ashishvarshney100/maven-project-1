@@ -12,9 +12,9 @@ pipeline {
 		sh 'mvn test'
 	    }
 	    post {
-		    always {
-			    junit keepLongStdio: true, testResults: 'target/surefire-reports/.*xml'
-		    }
+              always {
+	          junit keepLongStdio: true, testResults: 'target/surefire-reports/.*xml'
+	      }
 	    }
 	}
 	stage('deploy') {
