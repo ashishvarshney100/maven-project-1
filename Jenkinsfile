@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Compile & clean') {
 	    steps {
-		
+		sh 'echo "hello"'
+
 		sh 'clean compile'
 	        }
 	    }
