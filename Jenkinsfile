@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Compile & clean') {
 	    steps {
-		sh 'echo "hello"'
+		sh 'echo "hello webhook configured"'
 
 		sh 'clean compile'
 	        }
