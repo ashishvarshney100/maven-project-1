@@ -5,7 +5,7 @@ pipeline {
 	    steps {
 		sh 'echo "hello webhook configured"'
 
-		sh 'clean compile'
+		sh 'mvn clean compile'
 	        }
 	    }
 	stage('test') {
